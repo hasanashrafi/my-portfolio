@@ -20,22 +20,17 @@ function Skills() {
 
     return (
         <div >
-            <div>
-                <Link href="/" className='inline-block hover:bg-black rounded-full p-1 text-xl hover:text-white ease-in-out transition-all'>
-                    <IoMdArrowRoundBack />
-
-                </Link>
-            </div>
-            <div className='p-4 rounded-2xl w-full bg-white/10 flex flex-wrap gap-x-16 gap-y-10 justify-center items-center'>
+           
+            <div className='p-4 rounded-2xl w-full bg-black/20 shadow-lg flex flex-wrap gap-x-16 gap-y-10 justify-center items-center'>
                 {skills.map((skill, index) => (
-                    <div key={index} className=" hover:scale-110  overflow-hidden  animate-fade-in-up duration-1000 delay-100">
+                    <div key={index} className=" hover:scale-110  overflow-hidden animate-fade-in-up   ">
                         <Image
                             alt={skill.alt}
                             priority
                             src={skill.src}
                             width={100}
                             height={100}
-                            className="size-20"
+                            className="size-16"
                         />
                     </div>
                 ))}
